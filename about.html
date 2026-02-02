@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acerca de - Delvir</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+width: 8px;
+}
+::-webkit-scrollbar-track {
+background: #F6F7FC;
+}
+::-webkit-scrollbar-thumb {
+background: #C7C9D9;
+border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #9AA0B2;
+}
+.text-gradient {
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: linear-gradient(135deg, #14151A 0%, #4A4E5C 100%);
+}
+</style></head>
+<body class="bg-[#F6F7FC] text-[#14151A] overflow-x-hidden flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-0 left-0 bg-white/80 backdrop-blur-md border-b border-[rgba(20,21,26,0.06)]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="text-2xl font-semibold tracking-tighter text-[#14151A] flex items-center gap-2 group">
+                <span class="tracking-widest">DELVIR</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="about.html" class="text-sm font-medium text-[#14151A]">Acerca de</a>
+                <a href="how-it-works.html" class="text-sm font-normal text-[#4A4E5C] hover:text-[#6C6BFF] transition-colors">Cómo funciona</a>
+                <a href="faq.html" class="text-sm font-normal text-[#4A4E5C] hover:text-[#6C6BFF] transition-colors">Preguntas frecuentes</a>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zalocn/30min?hide_event_type_details=1&hide_gdpr_banner=1'});return false;" class="h-10 px-6 rounded-full bg-[#6C6BFF] hover:bg-[#5757E6] text-white text-sm font-medium transition-all duration-300 shadow-[0_6px_16px_0px_rgba(20,21,26,0.08)] hover:shadow-[0_10px_28px_0px_rgba(20,21,26,0.15)] hover:-translate-y-0.5 inline-flex items-center justify-center">
+                    Comenzar
+                </a>
+            </div>
+
+            <!-- Mobile Menu -->
+            <button class="md:hidden text-[#14151A]">
+                <iconify-icon icon="solar:hamburger-menu-linear" width="24" height="24"></iconify-icon>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-32 pb-20">
+        
+        <!-- Hero Section -->
+        <div class="max-w-7xl mx-auto px-6 mb-24">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6C6BFF]/10 text-[#6C6BFF] text-xs font-medium mb-8 border border-[#6C6BFF]/20">
+                    <iconify-icon icon="solar:users-group-rounded-linear" width="14"></iconify-icon>
+                    <span>Nuestra misión</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-semibold tracking-tighter text-[#14151A] mb-8 leading-[1.1]">
+                    Hacer que las consultas de medicina general en línea sean accesibles, asequibles y convenientes.
+                </h1>
+                <p class="text-lg md:text-xl text-[#4A4E5C] font-light leading-relaxed max-w-2xl mx-auto">
+                    Delvir es una plataforma de consultas médicas generales en línea. Nacimos con la misión de ayudar a cualquier persona a recibir orientación clínica, en cualquier momento y lugar.
+                </p>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="max-w-7xl mx-auto px-6 mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Stat Card 1 -->
+                <div class="bg-white p-8 rounded-[24px] border border-[rgba(20,21,26,0.06)] shadow-sm hover:shadow-[0_8px_30px_0px_rgba(20,21,26,0.04)] transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-full bg-[#EAEAF3] text-[#6C6BFF] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <iconify-icon icon="solar:chat-round-dots-linear" width="24"></iconify-icon>
+                    </div>
+                    <h3 class="text-4xl font-semibold tracking-tighter text-[#14151A] mb-2">17,000+</h3>
+                    <p class="text-sm text-[#4A4E5C]">Consultas facilitadas.</p>
+                </div>
+                <!-- Stat Card 2 -->
+                <div class="bg-white p-8 rounded-[24px] border border-[rgba(20,21,26,0.06)] shadow-sm hover:shadow-[0_8px_30px_0px_rgba(20,21,26,0.04)] transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-full bg-[#EAEAF3] text-[#6C6BFF] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <iconify-icon icon="solar:user-id-linear" width="24"></iconify-icon>
+                    </div>
+                    <h3 class="text-4xl font-semibold tracking-tighter text-[#14151A] mb-2">14+</h3>
+                    <p class="text-sm text-[#4A4E5C]">Profesionales con licencia, acreditados y con experiencia.</p>
+                </div>
+                <!-- Stat Card 3 -->
+                <div class="bg-white p-8 rounded-[24px] border border-[rgba(20,21,26,0.06)] shadow-sm hover:shadow-[0_8px_30px_0px_rgba(20,21,26,0.04)] transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-full bg-[#EAEAF3] text-[#6C6BFF] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <iconify-icon icon="solar:heart-angle-linear" width="24"></iconify-icon>
+                    </div>
+                    <h3 class="text-4xl font-semibold tracking-tighter text-[#14151A] mb-2">300+</h3>
+                    <p class="text-sm text-[#4A4E5C]">Personas han recibido ayuda a través de Delvir.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Story Section -->
+        <div class="bg-white border-y border-[rgba(20,21,26,0.06)] py-24 mb-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl font-semibold tracking-tight text-[#14151A] mb-6">Nuestra historia</h2>
+                        <div class="space-y-6 text-[#4A4E5C] leading-relaxed font-light">
+                            <p>
+                                Delvir fue fundada en 2013 por Alejandro Sanchez. Tras enfrentar sus propios desafíos y encontrar difícil hallar un profesional que se ajustara a su horario, presupuesto y necesidades, se dio cuenta de que debía existir una mejor manera.
+                            </p>
+                            <p>
+                                Se unió a Daniel Rojas para construir una plataforma que eliminara las barreras tradicionales para acceder a una consulta médica. Lo que comenzó como un proyecto pequeño creció y evolucionó con el tiempo.
+                            </p>
+                        </div>
+                        <div class="mt-10 pt-10 border-t border-gray-100 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full overflow-hidden bg-[#F2F3FA] flex items-center justify-center">
+                                <img
+                                  class="w-full h-full object-cover"
+                                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&h=200&q=80"
+                                  alt="Alejandro Sanchez"
+                                  loading="lazy"
+                                />
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-[#14151A]">Alejandro Sanchez</p>
+                                <p class="text-xs text-[#9AA0B2]">Fundador</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#15161A] pt-20 pb-10 text-white border-t border-[rgba(255,255,255,0.05)] mt-auto">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 mb-16">
+                <div class="col-span-2 lg:col-span-2 pr-10">
+                    <a href="index.html" class="text-2xl font-semibold tracking-tighter text-white mb-6 block">DELVIR</a>
+                    <p class="text-[#9AA0B2] text-sm leading-relaxed mb-6">
+                        Consultas de medicina general en línea con médicos verificados.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.05)] flex items-center justify-center hover:bg-[rgba(255,255,255,0.1)] transition-colors text-white">
+                            <iconify-icon icon="solar:brand-instagram-linear" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.05)] flex items-center justify-center hover:bg-[rgba(255,255,255,0.1)] transition-colors text-white">
+                            <iconify-icon icon="solar:brand-twitter-linear" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.05)] flex items-center justify-center hover:bg-[rgba(255,255,255,0.1)] transition-colors text-white">
+                            <iconify-icon icon="solar:brand-facebook-linear" width="20"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-semibold mb-4 text-white">Legal</h4>
+                    <ul class="space-y-3 text-[#9AA0B2] text-sm">
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contáctanos</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition-colors">Términos y condiciones</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition-colors">Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-[rgba(255,255,255,0.1)] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-[#74798C]">© 2023 Delvir Limited Liability Co. Todos los derechos reservados.</p>
+                <div class="flex gap-2">
+                     <iconify-icon icon="solar:lock-keyhole-linear" class="text-[#9AA0B2]" width="16"></iconify-icon>
+                     <span class="text-xs text-[#9AA0B2]">SSL seguro de 256 bits</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body></html>
+
